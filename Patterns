@@ -1,0 +1,138 @@
+class Temp{
+    public static void main(String[] args) {
+        int n=5;
+        //Pattern1
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern2
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print("1 ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern3
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern4
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print(j +" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern5
+        for(int i=1;i<=2*n;i++){
+            int total = i>n?2*n-i:i;
+            int spaces = n-total;
+            for(int k = 1;k<=spaces;k++){
+                System.out.print("");
+            }
+            for(int j = 1;j<=total;j++){
+                System.out.print( "* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern6
+        for(int i=1;i<=2*n;i++){
+            int total = i>n?2*n-i:i;
+            int spaces = n-total;
+            for(int k = 1;k<=spaces;k++){
+                System.out.print(" ");
+            }
+            for(int j = 1;j<=total;j++){
+                System.out.print( "* ");
+            }
+            System.out.println();
+        }
+        //Pattern7
+        for(int i=1;i<=2*n;i++) {
+            int total = i > n ? 2 * n - i : i;
+            int spaces = n - total;
+            for (int k = 1; k <= spaces; k++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= total; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        //Pattern8
+        System.out.println();
+        for(int i=1;i<=n;i++){
+            int spaces = n-i;
+            for(int k=1;k<=spaces;k++){
+                System.out.print("");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern9
+        System.out.println();
+        for(int i=1;i<=n;i++){
+            int spaces = n-i;
+            for(int k=1;k<=spaces;k++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //Pattern10
+        System.out.println();
+        for(int i=1;i<=n;i++){
+            int spaces = n-i;
+            for(int k=1;k<=spaces;k++){
+                System.out.print("  ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+         //Pattern11
+        for(int i=1;i<=n;i++){
+            int spaces = n-i;
+            for(int k=1;k<=spaces;k++){
+                System.out.print(" ");
+            }
+            for(int j=i;j>=1;j--){
+                System.out.print(j);
+            }
+            for(int j=2;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+        System.out.println();
+          //Pattern12
+        for(int i =0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                int atEveryIndex = Math.min(Math.min(i,j),Math.min(n-i,n-j));
+                System.out.print(atEveryIndex+" ");
+            }
+            System.out.println();
+        }
+    }
+}
